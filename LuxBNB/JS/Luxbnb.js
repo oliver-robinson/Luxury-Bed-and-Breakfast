@@ -1,15 +1,14 @@
 $(document).ready(function(){
     $('.fade-fade-fade').slick({
-        dots: true,
-        arrows: true,
-        // infinite: true,
-        // speed: 500,
+        dots: false,
+        arrows: false,
         fade: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
         autoplay: true,
         autoplaySpeed: 5000,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        pauseOnHover: false
     });
 });
                   
