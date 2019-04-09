@@ -1,0 +1,61 @@
+/*Top Nav*/
+.topNav{
+
+}
+
+.topNav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.topNav li{
+    list-style: none;
+    display: inline;
+}
+
+.box{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.box ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+.box li{
+    display: inline-block;
+    font-size: 36px;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.benefits{
+    margin-bottom: 75px;
+}
+
+.first-option {
+    width: auto;
+    height: 75px;
+    background: url('../images/marbel.jpg');
+}
+
+.second-option{
+    width: auto;
+    height: 75px;
+    background: url('../images/wood.jpg') no-repeat;
+}
+
+.third-option{
+    width: auto;
+    height: 75px;
+    background: url('../images/carpet.jpg') no-repeat; 
+}
+
+.fourth-option{
+    width: auto;
+    height: 75px;
+    background: url('../images/unique.jpg') no-repeat; 
+}

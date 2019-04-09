@@ -11,4 +11,3 @@ $(document).ready(function(){
         pauseOnHover: false
     });
 });
-                  
