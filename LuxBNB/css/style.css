@@ -1,72 +1,120 @@
-/*Top Nav*/
-.backgroundNav{
+body {
     width: 100%;
-    margin: 0 auto;
-    background-color: rgba(255,255,255,0.5);
+    height: auto;
+    position: relative;
+    background: url("../images/luxurypool.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-.heroImage{
-    width: 100%;
-    height: 500px;
+/*Top Navigation Bar*/
+.navbar-short {
+    position: relative;
     top: 0;
 }
 
-.topNavBar {
-    position: absolute;
-    top: 0;
-}
-
-.topNav ul{
-    margin: 0;
-    padding: 0;
-}
-
-.topNav li{
+.navbar-short ul {
     list-style: none;
-    display: inline;
-}
-
-.box{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.box ul{
-    padding: 0;
     margin: 0;
-    display: flex;
-    text-align: center;
+    padding: 0;
+    top: 0;
+    left: 0;
 }
 
-.box li{
+.navbar-short li {
     display: inline-block;
-    font-size: 36px;
-    list-style: none;
-    flex-grow: 1;
 }
 
-.benefits{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding: 0;
+/* .navbar-short img {
+    margin-top: -50px;
+    height: 150px;
+    width: 150px;
+} */
+.logo-container {
+    position: relative;
+}
+.logo-container a {
+    left: 250px;
+    position: absolute;
+    top: 50px;
 }
 
-.first-option {
-    width: auto;
-    background: url('../images/marbel.jpg');
+.logo-image {
+    position: absolute;
+    top: -48px;
+    left: 40px;
+    height: 200px;
+    width: 200px;
+    background-image: url(../images/lbblogo.png);
+    background-size: cover;
 }
 
-.second-option{
-    width: auto;
-    background: url('../images/wood.jpg') no-repeat;
+.btn-menu-short {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
-.third-option{
-    width: auto;
-    background: url('../images/pentfloor1.jpg') no-repeat; 
+.btn-menu-short:hover {
+    text-decoration: none;
+    color: whitesmoke;
+    border-bottom: 3px solid #215836;
 }
 
-.fourth-option{
-    width: auto;
-    background: url('../images/unique.jpg') no-repeat; 
+/*Bottom Navigation Bar*/
+.bot-navbar a {
+    position: fixed;
+    bottom: -30px;
+}
+
+.bot-navbar a {
+    padding-top: 40px;
+}
+
+.bot-navbar a:hover {
+    bottom: 0;
+}
+
+.cabins{
+    width: 20%;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;    
+    background: url("../images/wood.jpg") no-repeat;
+}
+
+.mansions{
+    width: 20%;
+    left: 20%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;
+    background: url("../images/marbel.jpg") no-repeat;
+}
+
+.penthouse{
+    width: 20%;
+    left: 40%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;
+    background: url("../images/pentfloor1.jpg") no-repeat;
+}
+
+.unique{
+    width: 20%;
+    left: 60%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;    
+    background: url("../images/unique.jpg") no-repeat;
+}
+
+
+.viewall{
+    width: 20%;
+    left: 80%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;
+    background: url("") no-repeat;
 }
