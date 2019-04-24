@@ -8,6 +8,33 @@ class homesDao {
         this.common = new daoCommon();
     }
 
+    findById(){
+        let sqlRequest = "SELECT * FROM homes WHERE id=$id";
+
+        let sqlParams = {
+            $id: id
+        }
+
+        return this.common.run(sqlRequest, sqlParams).then(rows => {
+            let homes = [];
+            for (const row of rows) {
+                users.push(new homes(
+                        row.id,
+                        row.user_id,
+                        row.bedrooms,
+                        row.bathrooms,
+                        row.squareft,
+                        row.houseTypes,
+                        row.amenities,
+                        row.pricing,
+                        row.availability
+                    )
+                );
+            }
+            return homes;
+        }); 
+    }
+
     findByHouseTypes(houseTypes){
         let sqlRequest = "SELECT * FROM user WHERE houseTypes =" + houseTypes;
         return this.common.findByHouseTypes(sqlRequest).then(rows => {

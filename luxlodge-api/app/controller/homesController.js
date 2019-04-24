@@ -11,6 +11,13 @@ class homesController {
         this.common = new ControllerCommon();
     };
 
+    findById(req, res){
+        let id = req.params.id;
+        this.homesDao.findById()
+            .then(this.common.findSuccess(res))
+            .catch(this.common.findError(res));
+    }
+
     findByHouseTypes(res) {
         this.homesDao.findByHouseTypes()
             .then(this.common.findSuccess(res))

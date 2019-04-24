@@ -9,6 +9,10 @@ router.get('/', function (req, res){
     homesController.findByHouseTypes(res);
 });
 
+router.get('/:id', function (req, res){
+    homesController.findById(res);
+});
+
 router.post("/create", function (req, res){
     homesController.create(req, res);
 });
