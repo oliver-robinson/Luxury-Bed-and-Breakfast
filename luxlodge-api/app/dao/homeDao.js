@@ -1,8 +1,8 @@
-const home = require("../model/home");
+const Home = require("../model/home");
 
 const daoCommon = require("./common/daoCommon");
 
-class homeDao {
+class HomeDao {
 
     constructor(){
         this.common = new daoCommon();
@@ -18,7 +18,7 @@ class homeDao {
         return this.common.run(sqlRequest, sqlParams).then(rows => {
             let homes = [];
             for (const row of rows) {
-                users.push(new home(
+                homes.push(new Home(
                         row.name,
                         row.bedrooms,
                         row.bathrooms,
@@ -38,9 +38,10 @@ class homeDao {
     findAll(){
         let sqlRequest = "SELECT * FROM home";
         return this.common.findAll(sqlRequest).then(rows => {
+            
             let homes = [];
             for (const row of rows) {
-                users.push(new home(
+                homes.push(new Home(
                     row.id,
                     row.name,
                     row.bedrooms,
@@ -99,4 +100,4 @@ class homeDao {
     };
 }
 
-module.exports = homeDao;
+module.exports = HomeDao;

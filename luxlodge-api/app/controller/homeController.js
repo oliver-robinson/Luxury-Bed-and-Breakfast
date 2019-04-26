@@ -1,13 +1,13 @@
-const homeDao = require("../dao/homeDao");
+const HomeDao = require("../dao/homeDao");
 
 const ControllerCommon = require("./common/controllerCommon");
 
-const home = require("../model/home");
+const Home = require("../model/home");
 
-class homeController {
+class HomeController {
 
     constructor() {
-        this.homeDao = new homeDao();
+        this.homeDao = new HomeDao();
         this.common = new ControllerCommon();
     };
 
@@ -25,7 +25,7 @@ class homeController {
     }; 
     
     create(req, res) {
-        let home = new home();
+        let home = new Home();
 
         home.name = req.body.name;
         home.bedrooms = req.body.bedrooms;
@@ -44,7 +44,7 @@ class homeController {
     };
 
     update(req, res) {
-        let home = new home();
+        let home = new Home();
        
         home.name = req.body.name;
         home.bedrooms = req.body.bedrooms;
@@ -70,4 +70,4 @@ class homeController {
     };
 }
 
-module.exports = homeController;
+module.exports = HomeController;

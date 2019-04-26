@@ -1,5 +1,5 @@
-class home {
-    constructor(id, name, bedrooms, bathrooms, pricing, availability, city, state, country, guest){
+class Home {
+    constructor(id, name, bedrooms, bathrooms, pricing, availability, city, state, country, guest) {
         this.id = id;
         this.name = name;
         this.bedrooms = bedrooms;  
@@ -13,4 +13,4 @@ class home {
     }
 }
 
-module.exports = home;
+module.exports = Home;
