@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="product-single-bg">
+    <div class="signup-bg">
         <div class="top-nav-bg">
             <div class="container-fluid">
                 <div class="row">
@@ -30,6 +30,24 @@
                             <li><a href="login.html">LOGIN</a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="signup-wrapper col-md-12">
+                    <form>
+                        <fieldset>
+                            <legend>Sign Up</legend>
+                            <label for="email">Email: <input type="text" id="email" name="email"></label>
+                            <label for="fName">First Name: <input type="text" id="fName" name="firstName"></label>
+                            <label for="lName">Last Name: <input type="text" id="lName" name="lastName"></label>
+                            <label for="password">Create your Password: <input type="text" id="password" name="password"></label>
+                            <legend>Birthday</legend>
+                            <p>To sign up, you must be 18 or older. Other people won’t see your birthday.</p>
+                            <input type="date" id="bday" name="bday" value="2018-07-22" min="1900-01-01" max="2019-12-31">
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>

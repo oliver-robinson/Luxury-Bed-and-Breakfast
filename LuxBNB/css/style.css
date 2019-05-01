@@ -60,7 +60,16 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .45);
+    background: rgba(0, 0, 0, .1);
+}
+
+.signup-bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../images/signup.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
 }
 /*Top Navigation Bar*/
 .top-nav-bg {
@@ -92,7 +101,7 @@ body {
 .top-nav-left ul {
     font-size: 16px;
     text-align: center;
-    margin: 37px 200px 0 0;
+    margin: 37px 0 0 -100px;
     padding: 0;
 }
 
@@ -185,6 +194,70 @@ body {
 .about-info {
     margin: 40px auto;
     text-align: center;
+}
+
+/*What is Happenning*/
+.stubhub-info img {
+    margin: 200px 0 0 -40px;
+    width: 330px;
+    height: 190px;
+}
+
+.stubhub-info p {
+    color: whitesmoke;
+}
+
+.stubhub-bonus i {
+    font-size: 24px;
+}
+
+.stubhub-bonus p {
+    padding-bottom: 10px;
+}
+
+.stubhub-button i {
+    font-size: 16;
+    padding-left: 30px;
+}
+
+.stubhub-wrapper {
+    margin: 180px auto 0 auto;
+    padding: 18px 36px 18px 36px;
+    width: 100%;
+    font-size: 16px;
+    color: whitesmoke;
+    max-width: 325px;
+    text-align: left;
+    background-color: #00AAAA;
+}
+
+.stubhub-button {
+    margin: 50px 0 0 15px;
+}
+
+.stubhub-button a { 
+    color: #05CCCC;
+    text-decoration: none;
+    padding: 27px 40px 27px 40px;
+    background-color: white;
+}
+
+.stubhub-button a:hover {
+    color: white;
+    text-decoration: none; 
+    padding: 27px 40px 27px 40px;
+    background-color: #05CCCC;
+}
+
+/*Sign Up Page*/
+.signup-wrapper {
+    margin: 200px auto 0 auto;
+    float: right;
+    padding: 18px 36px 18px 36px;
+    width: 100%;
+    color: black;
+    max-width: 550px;
+    background-color:white;
 }
 /*Bottom Navigation Bar*/
 .bot-navbar {
