@@ -71,9 +71,103 @@ body {
     background-size: cover;
     overflow: hidden;
 }
+
+.login-bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../images/login.jpg") no-repeat center center fixed ;
+    background-size: cover;
+    overflow: hidden;
+}
+
 /*Top Navigation Bar*/
+@media(min-width: 424px){
+    .top-nav-bg {
+        height: 28px;
+    }
+
+    .top-nav-left ul {
+        padding: 0;
+        font-size: 10px;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .top-nav-left li {
+        padding-left: 5px;
+    }
+
+    .top-nav-right ul {
+        padding: 0;
+        font-size: 10px;
+        text-align: right;
+        margin-top: -24px;
+    }
+
+    .top-nav-right li {
+        padding-right: 5px;
+    }
+}
+
+@media(min-width: 767px){
+    .top-nav-bg {
+        height: 48px;
+    }
+
+    .top-nav-left ul {
+        padding: 0;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .top-nav-left li {
+        padding-left: 10px;
+    }
+
+    .top-nav-right ul {
+        padding: 0;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .top-nav-right li {
+        padding-right: 10px;
+    }
+}
+
+@media(min-width: 1023px){
+    .top-nav-bg {
+        height: 68px;
+    }
+
+    .top-nav-left ul {
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+        margin: 37px 0 0 -100px;
+    }
+
+    .top-nav-left li {
+        padding-left: 35px;
+    }
+
+    .top-nav-right ul {
+        font-size: 16px;
+        text-align: center;
+        margin: 37px 0 0 200px;
+        padding: 0;
+    }
+
+    .top-nav-right li {
+        padding-right: 35px;
+    }
+    
+}
+
 .top-nav-bg {
-    height: 68px;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -98,15 +192,15 @@ body {
     background-size: cover;
 }
 
-.top-nav-left ul {
-    font-size: 16px;
-    text-align: center;
-    margin: 37px 0 0 -100px;
+.top-nav-left {
+    padding: 0;
+}
+
+.top-nav-right {
     padding: 0;
 }
 
 .top-nav-left li {
-    padding-left: 35px;
     list-style: none;
     display: inline;
 }
@@ -122,15 +216,7 @@ body {
     border-bottom: 3px solid #215836;
 }
 
-.top-nav-right ul {
-    font-size: 16px;
-    text-align: center;
-    margin: 37px 0 0 200px;
-    padding: 0;
-}
-
 .top-nav-right li {
-    padding-right: 35px;
     list-style: none;
     display: inline;
 }
@@ -168,17 +254,17 @@ body {
 }
 
 /*About Page*/
-.founder img{
+.founder img {
     padding: 0;
     margin: 100px auto 0 auto;
 }
 
-.founder h1{
+.founder h1 {
     margin: 5px auto;
     font-size: 18px;
 }
 
-.founder p{
+.founder p {
     margin: 0 auto;
     font-size: 10px;
 }
@@ -196,7 +282,7 @@ body {
     text-align: center;
 }
 
-/*What is Happenning*/
+/*What is Happenning Page*/
 .stubhub-info img {
     margin: 200px 0 0 -40px;
     width: 330px;
@@ -216,7 +302,7 @@ body {
 }
 
 .stubhub-button i {
-    font-size: 16;
+    font-size: 16px;
     padding-left: 30px;
 }
 
@@ -256,9 +342,59 @@ body {
     padding: 18px 36px 18px 36px;
     width: 100%;
     color: black;
-    max-width: 550px;
+    max-width: 400px;
     background-color:white;
 }
+
+.signup-button {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #6A323D;
+}
+
+.signup-button:hover {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #6A323D;
+    opacity: .85;
+}
+
+/*Login Page*/
+.login-wrapper {
+    margin: 200px auto 0 auto;
+    float: right;
+    padding: 18px 36px 18px 36px;
+    width: 100%;
+    color: black;
+    max-width: 350px;
+    background-color: white;
+}
+
+.login-button {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #4188C6;
+}
+
+.login-button:hover {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #4188C6;
+    opacity: .85;
+}
+
 /*Bottom Navigation Bar*/
 .bot-navbar {
     font-size: 18px;
@@ -292,7 +428,73 @@ body {
     background: rgba(0, 0, 0, .05);
 }
 
-.cabins{
+/*Phone Screen Size nav bar*/
+.bot-btns ul {
+    margin-top: 500px;
+}
+
+.bot-btns li {
+    padding: 10px;
+    list-style: none;
+    display: inline;
+}
+
+.cabins-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #C67203;
+}
+.mansions-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #22535F;
+}
+
+.penthouses-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #4188C6;
+}
+
+.unique-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #6A323D;
+}
+
+.view-all-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #A0B325;
+}
+/*End of Phone Screen Size nav bar*/
+
+.cabins {
     width: 20%;
     left: 0;
     text-align: center;
@@ -302,7 +504,7 @@ body {
     background-size: cover;
 }
 
-.mansions{
+.mansions {
     width: 20%;
     left: 20%;
     text-align: center;
@@ -312,7 +514,7 @@ body {
     background-size: cover;
 }
 
-.penthouse{
+.penthouses {
     width: 20%;
     left: 40%;
     text-align: center;
@@ -322,7 +524,7 @@ body {
     background-size: cover;
 }
 
-.unique{
+.unique {
     width: 20%;
     left: 60%;
     text-align: center;
@@ -333,7 +535,7 @@ body {
 }
 
 
-.viewall{
+.viewall {
     width: 20%;
     left: 80%;
     text-align: center;
