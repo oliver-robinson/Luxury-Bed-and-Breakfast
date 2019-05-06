@@ -1,0 +1,630 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Background*/
+.home-bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../images/luxurybg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.home-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.product-bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url("../images/viewall.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.product-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.wih-bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../images/wih.jpg") no-repeat center center fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.wih-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+}
+
+.signup-bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../images/signup.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login-bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../images/login.jpg") no-repeat center center fixed ;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*Top Navigation Bar*/
+@media(min-width: 424px){
+    .top-nav-bg {
+        height: 28px;
+    }
+
+    .top-nav-left ul {
+        padding: 0;
+        font-size: 10px;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .top-nav-left li {
+        padding-left: 5px;
+    }
+
+    .top-nav-right ul {
+        padding: 0;
+        font-size: 10px;
+        text-align: right;
+        margin-top: 2px;
+    }
+
+    .top-nav-right li {
+        padding-right: 5px;
+    }
+}
+
+@media(min-width: 767px){
+    .top-nav-bg {
+        height: 38px;
+    }
+
+    .top-nav-left ul {
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .top-nav-left li {
+        padding-left: 10px;
+    }
+
+    .top-nav-right ul {
+        padding: 0;
+        font-size: 14px;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .top-nav-right li {
+        padding-right: 10px;
+    }
+}
+
+@media(min-width: 1023px){
+    .top-nav-bg {
+        height: 68px;
+    }
+
+    .top-nav-left ul {
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+        margin: 37px 0 0 -100px;
+    }
+
+    .top-nav-left li {
+        padding-left: 35px;
+    }
+
+    .top-nav-right ul {
+        font-size: 16px;
+        text-align: center;
+        margin: 37px 0 0 200px;
+        padding: 0;
+    }
+
+    .top-nav-right li {
+        padding-right: 35px;
+    }
+    
+}
+
+.top-nav-bg {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: black; opacity: 0.75;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.logo-image {
+    position: absolute;
+    top: -60px;
+    left: 50px;
+    height: 200px;
+    width: 200px;
+    background-image: url("../images/lbblogo.png");
+    background-size: cover;
+}
+
+.top-nav-left {
+    padding: 0;
+}
+
+.top-nav-right {
+    padding: 0;
+}
+
+.top-nav-left li {
+    list-style: none;
+    display: inline;
+}
+
+.top-nav-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav-left a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid #215836;
+}
+
+.top-nav-right li {
+    list-style: none;
+    display: inline;
+}
+
+.top-nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav-right a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid #215836;
+}
+
+/*Product Page*/
+.wrapper {
+    margin: 90px auto 30px auto;
+    padding: 0;
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+    background: white;
+}
+
+/*Home Page*/
+.home-header { 
+    text-transform: uppercase;
+    transform: translateY(200px);
+    position: relative;
+    letter-spacing: 3.25px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/*About Page*/
+.founder img {
+    padding: 0;
+    margin: 100px auto 0 auto;
+}
+
+.founder h1 {
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+.founder p {
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.f-wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 200px;
+    text-align: left;
+}
+
+.about-info {
+    margin: 40px auto;
+    text-align: center;
+}
+
+/*What is Happenning Page*/
+@media(min-width: 424px){
+    .stubhub-info img {
+        margin: 50px 0 0 -10px;
+        width: 130px;
+        height: 64px;
+    }
+
+    .stubhub-info p {
+        font-size: 12px;
+    }
+
+    .stubhub-wrapper {
+        font-size: 10px;
+        max-width: 275px;
+        margin: 25px auto 0 auto;
+        padding: 9px 18px 9px 18px;
+    }
+
+    .stubhub-button {
+        margin: 40px 0 100px 45px;
+    }
+
+    .stubhub-button a { 
+        color: white;
+        text-decoration: none;
+        padding: 9px 20px 9px 20px;
+        background-color: #00AAAA;
+    }
+
+    .stubhub-button a:hover {
+        color: white;
+        text-decoration: none; 
+        padding: 18px 30px 18px 30px;
+        background-color: #05CCCC;
+    }
+}
+
+@media(min-width: 767px){
+    .stubhub-info img {
+        margin: 100px 0 0 -20px;
+        width: 230px;
+        height: 128px;
+    }
+
+    .stubhub-info p {
+        font-size: 12px;
+    }
+
+    .stubhub-wrapper {
+        font-size: 12px;
+        max-width: 300px;
+        margin: 60px auto 0 auto;
+        padding: 9px 18px 9px 18px;
+    }
+
+    .stubhub-button {
+        margin: 50px 0 0 0;
+    }
+
+    .stubhub-button a { 
+        color: #00AAAA;
+        text-decoration: none;
+        padding: 27px 40px 27px 40px;
+        background-color: white;
+    }
+    
+    .stubhub-button a:hover {
+        color: white;
+        text-decoration: none; 
+        padding: 27px 40px 27px 40px;
+        background-color: #05CCCC;
+    }
+}
+
+@media(min-width: 1023px){
+    .stubhub-info img {
+        margin: 200px 0 0 -40px;
+        width: 330px;
+        height: 190px;
+    }
+
+    .stubhub-info p {
+        font-size: 16px;
+    }
+
+    .stubhub-wrapper {
+        font-size: 16px;
+        max-width: 325px;
+        margin: 180px auto 0 auto;
+        padding: 18px 36px 18px 36px;
+    }
+
+    .stubhub-button {
+        margin: 50px 0 0 15px;
+    }
+
+    .stubhub-button a { 
+        color: #00AAAA;
+        text-decoration: none;
+        padding: 27px 40px 27px 40px;
+        background-color: white;
+    }
+    
+    .stubhub-button a:hover {
+        color: white;
+        text-decoration: none; 
+        padding: 27px 40px 27px 40px;
+        background-color: #05CCCC;
+    }    
+}
+
+.stubhub-info p {
+    color: whitesmoke;
+}
+
+.stubhub-bonus i {
+    font-size: 24px;
+}
+
+.stubhub-bonus p {
+    padding-bottom: 10px;
+}
+
+.stubhub-button i {
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.stubhub-wrapper {
+    width: 100%;
+    color: whitesmoke;
+    text-align: left;
+    background-color: #00AAAA;
+}
+
+/*Sign Up Page*/
+.signup-wrapper {
+    margin: 200px auto 0 auto;
+    float: right;
+    padding: 18px 36px 18px 36px;
+    width: 100%;
+    color: black;
+    max-width: 400px;
+    background-color:white;
+}
+
+.signup-button {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #6A323D;
+}
+
+.signup-button:hover {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #6A323D;
+    opacity: .85;
+}
+
+/*Login Page*/
+.login-wrapper {
+    margin: 200px auto 0 auto;
+    float: right;
+    padding: 18px 36px 18px 36px;
+    width: 100%;
+    color: black;
+    max-width: 350px;
+    background-color: white;
+}
+
+.login-button {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #4188C6;
+}
+
+.login-button:hover {
+    color: whitesmoke;
+    border: 0;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    background-color: #4188C6;
+    opacity: .85;
+}
+
+/*Bottom Navigation Bar*/
+.bot-navbar {
+    font-size: 18px;
+}
+
+.bot-navbar a {
+    position: fixed;
+    bottom: -105px;
+    color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+.bot-navbar a:hover {
+    transition: 0.3s;
+    bottom: 0;
+    color: black;
+    text-decoration: none;
+    background-color: black; opacity: 0.9;
+}
+
+.bot-navbar a:hover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .05);
+}
+
+/*Phone Screen Size nav bar*/
+.bot-btns ul {
+    bottom: 0;
+    position: fixed;
+}
+
+.bot-btns li {
+    padding: 10px;
+    list-style: none;
+    display: inline;
+}
+
+.cabins-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #C67203;
+}
+.mansions-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #22535F;
+}
+
+.penthouses-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #4188C6;
+}
+
+.unique-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #6A323D;
+}
+
+.view-all-btn a {
+    border: 0;
+    color: white;
+    opacity: .95;
+    padding: 0 20px;
+    line-height: 2.5;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #A0B325;
+}
+/*End of Phone Screen Size nav bar*/
+
+.cabins {
+    width: 20%;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+    border-top: 1rem solid #C67203;
+    background: url("../images/cabin.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.mansions {
+    width: 20%;
+    left: 20%;
+    text-align: center;
+    display: inline-block;
+    border-top: 1rem solid #22535F;
+    background: url("../images/mansion.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.penthouses {
+    width: 20%;
+    left: 40%;
+    text-align: center;
+    display: inline-block;
+    border-top: 1rem solid #4188C6;
+    background: url("../images/highrisers.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.unique {
+    width: 20%;
+    left: 60%;
+    text-align: center;
+    display: inline-block;
+    border-top: 1rem solid #6A323D;
+    background: url("../images/unique.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+.viewall {
+    width: 20%;
+    left: 80%;
+    text-align: center;
+    display: inline-block;
+    border-top: 1rem solid #A0B325;
+    background: url("../images/viewall.jpg") center no-repeat;
+    background-size: cover;
+}
