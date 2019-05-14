@@ -9,7 +9,7 @@ body {
     position: relative;
     background: url("../images/luxurybg.jpg") no-repeat center center fixed;
     background-size: cover;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .home-bg:before {
@@ -43,13 +43,94 @@ body {
     background: rgba(0, 0, 0, .45);
 }
 
+.cabin-bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url("../images/cabin.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.cabin-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.mansion-bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url("../images/mansion.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mansion-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.penthouse-bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url("../images/penthouse.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.penthouse-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.unique-bg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url("../images/unique.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.unique-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+
 .wih-bg {
     width: 100%;
     height: 100vh;
     position: relative;
     background: url("../images/wih.jpg") no-repeat center center fixed;
     background-size: cover;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .wih-bg:before {
@@ -170,7 +251,6 @@ body {
 .top-nav-bg {
     position: fixed;
     width: 100%;
-    z-index: 1;
     background-color: black; opacity: 0.75;
 }
 
@@ -291,18 +371,18 @@ body {
     }
 
     .stubhub-info p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .stubhub-wrapper {
         font-size: 10px;
         max-width: 275px;
-        margin: 25px auto 0 auto;
+        margin: 60px auto 0 auto;
         padding: 9px 18px 9px 18px;
     }
 
     .stubhub-button {
-        margin: 40px 0 100px 45px;
+        margin: 40px 0 0 0;
     }
 
     .stubhub-button a { 
@@ -517,7 +597,7 @@ body {
     position: fixed;
 }
 
-.bot-btns li {
+.bot-btns li {  
     padding: 10px;
     list-style: none;
     display: inline;
@@ -532,6 +612,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
     background-color: #C67203;
+    margin-right: 50px;
 }
 .mansions-btn a {
     border: 0;

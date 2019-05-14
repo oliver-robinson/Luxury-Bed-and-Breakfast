@@ -10,7 +10,11 @@ router.get('/', function (req, res){
 });
 
 router.get('/:id', function (req, res){
-    homeController.findById(res);
+    homeController.findById(req, res);
+});
+
+router.get('/home/:h_types', function (req, res){
+    homeController.findByHouseTypes(req, res)
 });
 
 router.post("/create", function (req, res){

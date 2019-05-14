@@ -13,7 +13,14 @@ class HomeController {
 
     findById(req, res){
         let id = req.params.id;
-        this.homeDao.findById()
+        this.homeDao.findById(id)
+            .then(this.common.findSuccess(res))
+            .catch(this.common.findError(res));
+    }
+
+    findByHouseTypes(req, res){
+        let h_types = req.params.h_types;
+        this.homeDao.findByHouseTypes(h_types)
             .then(this.common.findSuccess(res))
             .catch(this.common.findError(res));
     }
@@ -31,7 +38,7 @@ class HomeController {
         home.bedrooms = req.body.bedrooms;
         home.bathrooms = req.body.bathrooms;
         home.pricing = req.body.pricing;
-        home.availability = req.body.availability;
+        home.description = req.body.description;
         home.city = req.body.city;
         home.state = req.body.state;
         home.country = req.body.country;
@@ -50,7 +57,7 @@ class HomeController {
         home.bedrooms = req.body.bedrooms;
         home.bathrooms = req.body.bathrooms;
         home.pricing = req.body.pricing;
-        home.availability = req.body.availability;
+        home.description = req.body.description;
         home.city = req.body.city;
         home.state = req.body.state;
         home.country = req.body.country;
